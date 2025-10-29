@@ -24,3 +24,9 @@ CREATE INDEX idx_bookings_property_id ON bookings(property_id);
 CREATE INDEX idx_properties_city ON properties(city);
 
 -- ============================================================
+
+
+EXPLAIN SELECT * FROM bookings WHERE user_id = 5;
+
+
+
