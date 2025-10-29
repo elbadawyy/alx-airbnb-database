@@ -28,5 +28,4 @@ CREATE INDEX idx_properties_city ON properties(city);
 
 EXPLAIN SELECT * FROM bookings WHERE user_id = 5;
 
-
-
+ANALYZE SELECT * FROM bookings WHERE property_id = 25;
