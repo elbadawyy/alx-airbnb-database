@@ -1,4 +1,4 @@
-# 🏨 ALX Airbnb Database - Advanced Querying: SQL Joins
+# 🏨 ALX Airbnb Database - Advanced Querying
 
 ## 📘 Task 0: Write Complex Queries with Joins
 
@@ -13,12 +13,3 @@ Demonstrate mastery of SQL joins by writing complex queries that combine data ac
 - Simulate **FULL OUTER JOIN** behavior in MySQL using `UNION`.
 
 ---
-
-### 🧩 Queries Overview
-
-#### 1. **INNER JOIN**
-Retrieve all **bookings** and the respective **users** who made those bookings.
-```sql
-SELECT users.id, users.first_name, users.last_name, bookings.id AS booking_id, bookings.property_id, bookings.start_date, bookings.end_date
-FROM users
-INNER JOIN bookings ON users.id = bookings.user_id;
