@@ -7,6 +7,10 @@
 -- across frequently used tables: users, bookings, and properties.
 -- ============================================================
 
+EXPLAIN SELECT * FROM bookings WHERE user_id = 5;
+
+
+
 -- 🔍 1. Index on users table
 -- Purpose: Speeds up searches and unique lookups by email
 CREATE INDEX idx_users_email ON users(email);
